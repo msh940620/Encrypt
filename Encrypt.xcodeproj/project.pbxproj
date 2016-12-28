@@ -14,10 +14,6 @@
 		F558E1071E13B90E00725D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F558E1051E13B90E00725D72 /* Main.storyboard */; };
 		F558E1091E13B90E00725D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558E1081E13B90E00725D72 /* Assets.xcassets */; };
 		F558E10C1E13B90E00725D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F558E10A1E13B90E00725D72 /* LaunchScreen.storyboard */; };
-		F558E11D1E13B94900725D72 /* GHNSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F558E1151E13B94900725D72 /* GHNSData+Base64.m */; };
-		F558E11E1E13B94900725D72 /* GHNSString+HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = F558E1171E13B94900725D72 /* GHNSString+HMAC.m */; };
-		F558E11F1E13B94900725D72 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F558E1191E13B94900725D72 /* RSAEncryptor.m */; };
-		F558E1201E13B94900725D72 /* ybase64.c in Sources */ = {isa = PBXBuildFile; fileRef = F558E11A1E13B94900725D72 /* ybase64.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,15 +30,6 @@
 		F558E1081E13B90E00725D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F558E10B1E13B90E00725D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F558E10D1E13B90E00725D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F558E1141E13B94900725D72 /* GHNSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSData+Base64.h"; sourceTree = "<group>"; };
-		F558E1151E13B94900725D72 /* GHNSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSData+Base64.m"; sourceTree = "<group>"; };
-		F558E1161E13B94900725D72 /* GHNSString+HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSString+HMAC.h"; sourceTree = "<group>"; };
-		F558E1171E13B94900725D72 /* GHNSString+HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSString+HMAC.m"; sourceTree = "<group>"; };
-		F558E1181E13B94900725D72 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
-		F558E1191E13B94900725D72 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
-		F558E11A1E13B94900725D72 /* ybase64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ybase64.c; sourceTree = "<group>"; };
-		F558E11B1E13B94900725D72 /* ybase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ybase64.h; sourceTree = "<group>"; };
-		F558E11C1E13B94900725D72 /* ydefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ydefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +82,6 @@
 		F558E0FB1E13B90E00725D72 /* Encrypt */ = {
 			isa = PBXGroup;
 			children = (
-				F558E1131E13B94900725D72 /* Encrypt */,
 				F558E0FF1E13B90E00725D72 /* AppDelegate.h */,
 				F558E1001E13B90E00725D72 /* AppDelegate.m */,
 				F558E1021E13B90E00725D72 /* ViewController.h */,
@@ -115,22 +101,6 @@
 				F558E0FD1E13B90E00725D72 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F558E1131E13B94900725D72 /* Encrypt */ = {
-			isa = PBXGroup;
-			children = (
-				F558E1141E13B94900725D72 /* GHNSData+Base64.h */,
-				F558E1151E13B94900725D72 /* GHNSData+Base64.m */,
-				F558E1161E13B94900725D72 /* GHNSString+HMAC.h */,
-				F558E1171E13B94900725D72 /* GHNSString+HMAC.m */,
-				F558E1181E13B94900725D72 /* RSAEncryptor.h */,
-				F558E1191E13B94900725D72 /* RSAEncryptor.m */,
-				F558E11A1E13B94900725D72 /* ybase64.c */,
-				F558E11B1E13B94900725D72 /* ybase64.h */,
-				F558E11C1E13B94900725D72 /* ydefines.h */,
-			);
-			path = Encrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,12 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F558E1041E13B90E00725D72 /* ViewController.m in Sources */,
-				F558E11E1E13B94900725D72 /* GHNSString+HMAC.m in Sources */,
 				F558E1011E13B90E00725D72 /* AppDelegate.m in Sources */,
-				F558E11D1E13B94900725D72 /* GHNSData+Base64.m in Sources */,
 				F558E0FE1E13B90E00725D72 /* main.m in Sources */,
-				F558E11F1E13B94900725D72 /* RSAEncryptor.m in Sources */,
-				F558E1201E13B94900725D72 /* ybase64.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -369,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -383,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X7X563P935;
 				INFOPLIST_FILE = Encrypt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.reminisce.Encrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X7X563P935;
 				INFOPLIST_FILE = Encrypt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.reminisce.Encrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
