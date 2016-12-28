@@ -167,6 +167,7 @@
 				TargetAttributes = {
 					F558E0F81E13B90E00725D72 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X7X563P935;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -380,6 +381,7 @@
 			baseConfigurationReference = 837DD1A01E02FE6F7CD02AC8 /* Pods-Encrypt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7X563P935;
 				INFOPLIST_FILE = Encrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.reminisce.Encrypt;
@@ -392,6 +394,7 @@
 			baseConfigurationReference = C3787BD86E0EDD640FA81C0A /* Pods-Encrypt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7X563P935;
 				INFOPLIST_FILE = Encrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.reminisce.Encrypt;
