@@ -14,6 +14,10 @@
 		F558E1071E13B90E00725D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F558E1051E13B90E00725D72 /* Main.storyboard */; };
 		F558E1091E13B90E00725D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558E1081E13B90E00725D72 /* Assets.xcassets */; };
 		F558E10C1E13B90E00725D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F558E10A1E13B90E00725D72 /* LaunchScreen.storyboard */; };
+		F57E84B81E150936009045BC /* GHNSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E84B01E150936009045BC /* GHNSData+Base64.m */; };
+		F57E84B91E150936009045BC /* GHNSString+HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E84B21E150936009045BC /* GHNSString+HMAC.m */; };
+		F57E84BA1E150936009045BC /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E84B41E150936009045BC /* RSAEncryptor.m */; };
+		F57E84BB1E150936009045BC /* ybase64.c in Sources */ = {isa = PBXBuildFile; fileRef = F57E84B51E150936009045BC /* ybase64.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,15 @@
 		F558E1081E13B90E00725D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F558E10B1E13B90E00725D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F558E10D1E13B90E00725D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57E84AF1E150936009045BC /* GHNSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSData+Base64.h"; sourceTree = "<group>"; };
+		F57E84B01E150936009045BC /* GHNSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSData+Base64.m"; sourceTree = "<group>"; };
+		F57E84B11E150936009045BC /* GHNSString+HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSString+HMAC.h"; sourceTree = "<group>"; };
+		F57E84B21E150936009045BC /* GHNSString+HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSString+HMAC.m"; sourceTree = "<group>"; };
+		F57E84B31E150936009045BC /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		F57E84B41E150936009045BC /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		F57E84B51E150936009045BC /* ybase64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ybase64.c; sourceTree = "<group>"; };
+		F57E84B61E150936009045BC /* ybase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ybase64.h; sourceTree = "<group>"; };
+		F57E84B71E150936009045BC /* ydefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ydefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +95,7 @@
 		F558E0FB1E13B90E00725D72 /* Encrypt */ = {
 			isa = PBXGroup;
 			children = (
+				F57E84AE1E150936009045BC /* Encrypt */,
 				F558E0FF1E13B90E00725D72 /* AppDelegate.h */,
 				F558E1001E13B90E00725D72 /* AppDelegate.m */,
 				F558E1021E13B90E00725D72 /* ViewController.h */,
@@ -101,6 +115,22 @@
 				F558E0FD1E13B90E00725D72 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F57E84AE1E150936009045BC /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				F57E84AF1E150936009045BC /* GHNSData+Base64.h */,
+				F57E84B01E150936009045BC /* GHNSData+Base64.m */,
+				F57E84B11E150936009045BC /* GHNSString+HMAC.h */,
+				F57E84B21E150936009045BC /* GHNSString+HMAC.m */,
+				F57E84B31E150936009045BC /* RSAEncryptor.h */,
+				F57E84B41E150936009045BC /* RSAEncryptor.m */,
+				F57E84B51E150936009045BC /* ybase64.c */,
+				F57E84B61E150936009045BC /* ybase64.h */,
+				F57E84B71E150936009045BC /* ydefines.h */,
+			);
+			path = Encrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F558E1041E13B90E00725D72 /* ViewController.m in Sources */,
+				F57E84B91E150936009045BC /* GHNSString+HMAC.m in Sources */,
 				F558E1011E13B90E00725D72 /* AppDelegate.m in Sources */,
+				F57E84B81E150936009045BC /* GHNSData+Base64.m in Sources */,
 				F558E0FE1E13B90E00725D72 /* main.m in Sources */,
+				F57E84BA1E150936009045BC /* RSAEncryptor.m in Sources */,
+				F57E84BB1E150936009045BC /* ybase64.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
